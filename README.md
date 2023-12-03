@@ -18,7 +18,7 @@ This project is a simple web-based user management interface with features such 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/Admin-Dashboard
+   git clone https://github.com/kishlaykumar07/Admin-Dashboard.git
    git
    cd Admin-Dashboard
 
@@ -44,7 +44,7 @@ JavaScript
 
 # Acknowledgements
 
-User data is fetched from the Geektrust API endpoint: members.json
+User data is fetched from: [Geektrust API endpoint](https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json).
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.   
