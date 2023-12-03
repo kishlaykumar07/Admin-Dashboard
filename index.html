@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="search-icon">
+    <label for="search">Search:</label>
+    <input type="text" id="search" placeholder="Search..." oninput="search()">
+    <button class="btn" onclick="deleteSelected()">
+      <i class='fa fa-trash fa-3x' style='color: red'></i>
+    </button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="selectAll" onclick="selectAll()"></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="userTableBody"></tbody>
+  </table>
+
+  <div class="pagination" id="pagination">
+    <button class="page-btn first-page" onclick="navigateToPage(1)">First</button>
+    <button class="page-btn previous-page" onclick="navigateToPage(currentPage - 1)">Previous</button>
+    <span id="currentPage" class="page-info">Page 1 of 1</span>
+    <button class="page-btn next-page" onclick="navigateToPage(currentPage + 1)">Next</button>
+    <button class="page-btn last-page" onclick="navigateToPage(totalPages)">Last</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
